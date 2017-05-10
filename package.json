@@ -1,0 +1,42 @@
+{
+  "name": "node-express-boilerplate",
+  "description": "The perfect starting place for a Node/Express Rest service.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cody123Anderson/node-express-boilerplate.git"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development PORT=3000 nodemon server.js",
+    "start": "NODE_ENV=production PORT=3000 node server.js",
+    "test": "mocha --recursive ./test",
+    "coverage": "nyc mocha --recursive ./test",
+    "report": "nyc report --reporter=html",
+    "lint": "eslint . --ext .js",
+    "lint-fix": "eslint . --ext .js --fix"
+  },
+  "keywords": [
+    "Node",
+    "Express"
+  ],
+  "author": "Cody Anderson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cody123Anderson/node-express-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Cody123Anderson/node-express-boilerplate#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "morgan": "^1.8.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.19.0",
+    "mocha": "^3.3.0",
+    "nodemon": "^1.11.0",
+    "nyc": "^10.3.2"
+  }
+}

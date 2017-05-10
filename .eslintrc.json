@@ -1,0 +1,22 @@
+{
+    "env": {
+      "commonjs": true,
+      "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "globals": {
+      "beforeEach": true,
+      "describe": true,
+      "it": true
+    },
+    "rules": {
+      "indent": ["error", 2, { "SwitchCase": 1 }],
+      "no-console": ["error", { "allow": ["warn", "error", "info"] }],
+      "no-use-before-define": "error",
+      "quotes": ["error", "single"],
+      "semi": ["error", "always"]
+    }
+}
